@@ -25,5 +25,8 @@
     "redux-actions": "^2.6.5",
     "redux-saga": "^1.0.2",
     "styled-components": "^4.2.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0"
   }
 }
