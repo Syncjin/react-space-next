@@ -11,6 +11,7 @@ const configure = () => {
     applyMiddleware(sagaMiddleware)
   ));
 
+  sagaMiddleware.run(rootSaga);
   return store;
 }
 
