@@ -16,6 +16,7 @@ export default class Root extends App {
     return { pageProps }
   }
   render() {
+    console.log('env', process.env.TEST)
     const { Component, pageProps } = this.props;
     return (
       <Container>
