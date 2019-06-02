@@ -3,7 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../store';
-
+import '../styles/Base.scss';
 
 export default class Root extends App {
   static async getInitialProps({Component, ctx}) {
@@ -17,7 +17,6 @@ export default class Root extends App {
   }
   render() {
     const { Component, pageProps } = this.props;
-    console.log('app store', store)
     return (
       <Container>
         <Head>
