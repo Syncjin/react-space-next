@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "react-space-next",
+  "alias": ["react-space-next.now.sh"],
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ]
+  
+}
