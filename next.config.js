@@ -9,8 +9,12 @@ const Dotenv = require('dotenv-webpack')
 module.exports = withSass(withCss({
   target: 'serverless',
   
+  env: {
+    customKey: '커스텀 키'
+  },
   webpack: config => {
 
+    // 1번 .env 파일 방법
     config.plugins = config.plugins || []
 
     config.plugins = [
@@ -22,39 +26,8 @@ module.exports = withSass(withCss({
         systemvars: true
       })
     ]
-    // config.module.rules.push(
-    //   {
-    //     test: /\.css$/,
-    //     use: [
-    //       'style-loader',
-    //       {
-    //         loader: 'css-loader',
-    //         options: {
-    //           modules: true,
-    //           importLoaders: 1,
-    //           localIdentName:"[name]_[local]_[hash:base64]",
-    //           sourceMap: true,
-    //         }
-    //       }
-    //     ]
-    //   },
-    //   {
-    //     test: /\.scss$/,
-    //     use: [
-    //       'style-loader',
-    //       {
-    //         loader: 'css-loader',
-    //         options: {
-    //           modules: true,
-    //           importLoaders: 1,
-    //           localIdentName:"[name]_[local]_[hash:base64]",
-    //           sourceMap: true,
-    //         }
-    //       },
-    //       'sass-loader'
-    //     ]
-    //    }
-    // )
+
+   
    
     return config
   }
