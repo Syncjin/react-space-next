@@ -3,7 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../store';
-import '../styles/Base.scss';
+import '../static/styles/Base.css';
 
 export default class Root extends App {
   static async getInitialProps({Component, ctx}) {
@@ -16,8 +16,9 @@ export default class Root extends App {
     return { pageProps }
   }
   render() {
-    console.log('env', process.env.TEST)
     const { Component, pageProps } = this.props;
+    console.log(`process env key: ${process.env.TEST}`)
+    console.log(`process custom env key: ${process.env.customKey}`)
     return (
       <Container>
         <Head>
