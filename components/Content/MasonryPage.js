@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled, {css} from 'styled-components';
-import { blue, normal, white, ActBlue } from '../../styles/utils';
+import { blue, normal, white, ActBlue } from '../utils';
 import { DominoSpinner } from 'react-spinners-kit';
 import MasonryContainer from '../../containers/MasonryContainer';
 import FloatingButton from './FloatingButton';
@@ -92,7 +92,6 @@ class MasonryPage extends Component {
  
 
   constructor(props){
-    // console.log('masornypage')
     super(props);
     this.scrollThrottling = null;
   }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled, {css} from 'styled-components';
-import { blue, normal, white, ActBlue, gray } from '../../styles/utils';
+import { blue, normal, white, ActBlue, gray } from '../utils';
 import { Motion, spring } from 'react-motion';
 
 const Wrapper = styled.div`

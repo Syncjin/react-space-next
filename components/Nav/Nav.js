@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import { blue } from '../../styles/utils';
+import { blue } from '../utils';
 import { device } from '../SizeCheck';
 import NavList from './NavList';
 

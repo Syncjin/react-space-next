@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import styled, {css} from 'styled-components';
 import { device } from '../SizeCheck';
-import { blue, ActBlue } from '../../styles/utils';
-// import { BrowserRouter as Router , Route, Link} from 'react-router-dom';
+import { blue, ActBlue } from '../utils';
 import Link from 'next/link'
 
 const Wrapper = styled.ul`

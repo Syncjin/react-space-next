@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 import Logo from './Logo';
-import { blue } from '../../styles/utils';
+import { blue } from '../utils';
 import Icon from './Icon';
 
 const HeaderWrapper = styled.div`

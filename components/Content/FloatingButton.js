@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled, {css} from 'styled-components';
 import { Motion, spring } from 'react-motion';
 import * as Md from 'react-icons/md';
-import { blue, normal, white, ActBlue } from '../../styles/utils';
+import { blue, normal, white, ActBlue } from '../utils';
 
 const Wrapper = styled.div`
   width: 50px;

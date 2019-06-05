@@ -13,15 +13,6 @@ const Wrapper = styled.div`
 
 
 class Slide extends Component {
- 
-  // componentDidMount(){
-  //   this.props.getApi();
-  //   this.props.autoNext(this)
-  // }
-
-  // componentWillUnmount(){
-  //   this.props.autoNextClear(this);
-  // }
 
   render() {
     const { handleNext, handlePrev, config } = this.props;

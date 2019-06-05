@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styled, {css} from 'styled-components';
-import {Color, ellipse} from '../../styles/utils';
-// import {Link} from 'react-router-dom';
+import {Color, ellipse} from '../utils';
 import Link from 'next/link';
 import {Motion, spring} from 'react-motion';
 import * as Md from 'react-icons/md';
@@ -255,7 +254,7 @@ class MasonryItem extends Component {
           })
         }}>
         {({transX, transY}) => 
-          <Link href={`/cat/${item.key}`}>
+          <Link as={`/cat?id=${item.key}`} href={`/cat?id=${item.key}`}>
             <a>
             <Wrapper CellHeight={CellHeight} CellWidth={CellWidth} style={{
               WebkitTransform: `translate3d(${transX}px, ${transY}px, 0)`,
